@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raza Ladies Designer Boutique</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+
+<header class="header">
+  <div class="logo">Raza <span>Ladies</span></div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav class="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Our Work</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Raza Ladies Designer Boutique</h1>
+    <p>Har tarah ke Ladies Suits, Lehenga, Blouse & Custom Stitching</p>
+    <a href="contact.html" class="btn">Book Your Design</a>
+  </div>
+</section>
+
+
+<section class="speciality-bg">
+  <div class="speciality-overlay">
+    <h2>Our Speciality</h2>
+
+    <div class="service-box">
+      <div>👗 Bridal Wear</div>
+      <div>✂️ Custom Stitching</div>
+      <div>✨ Party Wear</div>
+      <div>🧵 Designer Blouse</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Custom Designer Dress Chahiye?</h2>
+  <p>Perfect fitting, premium finishing aur latest designs ke saath</p>
+  <a href="contact.html" class="btn">Book Your Design</a>
+</section>
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+
+  <div class="testimonial-slider">
+    <div class="testimonial active">
+      <p>“Perfect fitting aur design bilkul boutique level tha. Highly recommended!”</p>
+      <h4>— Ayesha Khan</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>“Bridal dress ka kaam bahut hi premium tha. Time pe delivery.”</p>
+      <h4>— Sana Ali</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>“Designer blouse fitting ekdum perfect. Thank you Raza Boutique.”</p>
+      <h4>— Farheen</h4>
+    </div>
+  </div>
+</section>
+
+<section class="map-full">
+  <h2>Visit Our Shop</h2>
+
+  <iframe
+    src="https://www.google.com/maps?q=Raza%20Ladies%20Designer%20Boutique%20Mumbai&output=embed"
+    loading="lazy">
+  </iframe>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-grid">
+
+    <div>
+      <h3>Raza Ladies</h3>
+      <p>Designer Boutique for premium ladies wear stitching & custom designs.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="work.html">Our Work</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h4>Our Services</h4>
+      <p>Bridal Wear</p>
+      <p>Party Wear</p>
+      <p>Designer Blouse</p>
+      <p>Custom Stitching</p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>📞  08451989951 / 09833391729</p>
+      <p>📍 Thane(West)</p>
+      <p>🕒 11 AM – 11 PM</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Raza Ladies Designer Boutique | All Rights Reserved
+  </div>
+</footer>
+
+<script src="script.js">
+  
+
+  
+let index = 0;
+const testimonials = document.querySelectorAll(".testimonial");
+
+setInterval(() => {
+  testimonials[index].classList.remove("active");
+  index = (index + 1) % testimonials.length;
+  testimonials[index].classList.add("active");
+}, 4000);
+</script>
+
+<a href="https://wa.me/919833391729?text=Hello%20I%20want%20to%20enquire%20about%20designer%20ladies%20wear"
+   class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+</body>
+</html>
